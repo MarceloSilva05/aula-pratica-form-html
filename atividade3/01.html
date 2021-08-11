@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade1</title>
+    <style>
+        section {
+            border: solid black 2px;
+            padding: 10px;
+            float: left;
+        }
+        table { margin-left: 120px;}
+        .cor{
+            background-color: #e3ebee;
+            width: 150px;
+        }
+        .cor2{ background-color: #e3ebee;}
+        h1{ font-size: 16px;}
+        table {box-shadow: 1px 1px 1px black; }
+        #nome{
+            width: 500px;
+            margin-left: 75px;
+        }
+        #sigla{
+            width: 40px;
+            margin-left: 81px;
+        }
+        .direita1{margin: 0px 110px 0px 242px;}
+        .direita2{ margin-left: 146px;}
+        #botao{
+            margin-left: 80px;
+        }
+        label{
+            margin-right: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Manutenção do Órgão Colegiado</h1>
+        <table>
+            <tr>
+                <td class="cor"><strong>Unidade</strong></td>
+                <td>FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA</td>
+            </tr>
+            <tr>
+                <td class="cor"><strong>Tipo Colegiado</strong></td>
+                <td>CONGREGAÇÃO</td>
+            </tr>
+        </table>
+        <form action="">
+            <h1 class="cor2">Órgão Colegiado</h1>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" value=" CONGRGAÇÃO DA FACULDADE DE ILHA SOLTEIRA"><br><br>
+            <label for="sigla">Sigla</label>
+            <input type="text" name="sigla" id="sigla" maxlength="4" value="CFIS">
+            
+            <label for="status" class="direita1">Status</label>
+            <select name="status" id="status">
+                <option value="ativado">ATIVADO</option>
+            </select><br><br>
+
+            <label for="dataInicio">Data de ativação</label>
+            <input type="date" name="dataInicio" id="dataInicio" value="2000-10-15" style="margin-left: 8px;">
+
+            <label for="dataFinal" class="direita2">Data desativação</label>
+            <input type="date" name="" id="dataFinal"><br><br>
+
+            <label for="origem">Órgão de Origem</label>
+            <input type="text" name="origem" id="origem" style="width: 380px;">
+            <button type="button">Buscar</button><br><br>
+
+            <label for="superior">Órgão Superior</label>
+            <input type="text" name="superior" id="superior" style="margin-left: 12px; width: 380px;">
+            <button type="button">Buscar</button><br><br>
+
+            <label for="documentacao">Documentação</label>
+            <textarea name="documentacao" id="documentacao" cols="50" rows="4" style="margin-left: 16px;" placeholder="Órgão criado com objetivo de aprovar normas da unidade."></textarea><br><br>
+            <input type="submit" value="Salvar" id="botao" style="margin: 0px 350px 0px 110px;">
+            <input type="reset" value="Excluir">
+
+        </form>
+    </section>
+</body>
+
+</html>
